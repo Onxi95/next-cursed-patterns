@@ -3,6 +3,8 @@ import { PokemonCard } from "./components/PokemonCard";
 import { redirect } from "next/navigation";
 import { RedirectType } from "next/navigation";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const pokemon = await getPokemon({ limit: 9, offset: 0 });
 

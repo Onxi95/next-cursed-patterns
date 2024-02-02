@@ -1,6 +1,8 @@
 import { PokemonCard } from "../components/PokemonCard";
 import { getPokemon } from "./api";
 
+export const dynamic = "force-dynamic";
+
 export default async function OtherRoute() {
   const pokemon = await getPokemon({ limit: 9, offset: 9 });
 
