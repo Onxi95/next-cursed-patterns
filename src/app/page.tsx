@@ -1,4 +1,4 @@
-import { getPokemon } from "./other-route/api";
+import { getPokemon } from "./api";
 import { PokemonCard } from "./components/PokemonCard";
 import { redirect } from "next/navigation";
 import { RedirectType } from "next/navigation";

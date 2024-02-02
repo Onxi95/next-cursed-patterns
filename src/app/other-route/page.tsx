@@ -1,5 +1,5 @@
 import { PokemonCard } from "../components/PokemonCard";
-import { getPokemon } from "./api";
+import { getPokemon } from "../api";
 
 export const dynamic = "force-dynamic";
 
