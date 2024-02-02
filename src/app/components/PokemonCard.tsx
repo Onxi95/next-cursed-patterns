@@ -3,12 +3,11 @@ import Image from "next/image";
 type PokemonCardProps = {
   name: string;
   image: string;
-  url: string;
 };
 
-export const PokemonCard = ({ name, url, image }: PokemonCardProps) => {
+export const PokemonCard = ({ name, image }: PokemonCardProps) => {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl" key={name}>
+    <div className="card w-full bg-base-100 shadow-xl" key={name}>
       <figure>
         <Image src={image} alt={name} width={200} height={200} />
       </figure>
